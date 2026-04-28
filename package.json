@@ -5,15 +5,18 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "dev:host": "vite --host",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "vercel-build": "vite build"
   },
   "dependencies": {
+    "@tailwindcss/vite": "^4.2.4",
     "react": "^19.2.5",
     "react-dom": "^19.2.5",
-    "react-router-dom": "^7.14.2"
+    "react-router-dom": "^7.14.2",
+    "tailwindcss": "^4.2.4"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
