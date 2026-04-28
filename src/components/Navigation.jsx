@@ -15,51 +15,64 @@ function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <nav className="navbar">
-      <div className="nav-container">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-slate-900/80 backdrop-blur-xl border-b border-white/10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16">
+          {/* Logo */}
+          <div className="flex-shrink-0">
+            <Link to="/" className="text-cyan-400 font-bold text-sm sm:text-base tracking-wider hover:text-yellow-400 transition-colors">
+              CST TECH TITANS TROPHY
+            </Link>
+          </div>
 
-        {/* Logo */}
-        <div className="nav-logo">
-          <Link to="/">CST TECH TITANS TROPHY</Link>
+          {/* Desktop links */}
+          <div className="hidden md:block">
+            <div className="flex items-baseline space-x-4">
+              {navLinks.map(({ to, label }) => (
+                <Link
+                  key={to}
+                  to={to}
+                  className="text-gray-300 hover:text-cyan-400 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                >
+                  {label}
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          {/* Hamburger — mobile only */}
+          <div className="md:hidden">
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              aria-label="Toggle menu"
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-white/10 focus:outline-none"
+            >
+              <div className="w-6 h-5 flex flex-col justify-between">
+                <span className={`block w-6 h-0.5 bg-current rounded-full transition-all duration-300 ${isOpen ? 'rotate-45 translate-y-2' : ''}`} />
+                <span className={`block w-6 h-0.5 bg-current rounded-full transition-all duration-300 ${isOpen ? 'opacity-0' : ''}`} />
+                <span className={`block w-6 h-0.5 bg-current rounded-full transition-all duration-300 ${isOpen ? '-rotate-45 -translate-y-2' : ''}`} />
+              </div>
+            </button>
+          </div>
         </div>
-
-        {/* Desktop links — hidden on mobile, visible on desktop */}
-        <ul className="hidden flex desktop-nav-links">
-          {navLinks.map(({ to, label }) => (
-            <li key={to}>
-              <Link to={to}>{label}</Link>
-            </li>
-          ))}
-        </ul>
-
-        {/* Hamburger — mobile only */}
-        <button
-          onClick={() => setIsOpen(!isOpen)}
-          aria-label="Toggle menu"
-          className="md:hidden flex flex-col gap-[5px] p-1.5 bg-transparent border-none cursor-pointer"
-        >
-          <span className={`block w-6 h-[2px] bg-current rounded transition-transform duration-300 ${isOpen ? 'translate-y-[7px] rotate-45' : ''}`} />
-          <span className={`block w-6 h-[2px] bg-current rounded transition-opacity duration-300 ${isOpen ? 'opacity-0' : ''}`} />
-          <span className={`block w-6 h-[2px] bg-current rounded transition-transform duration-300 ${isOpen ? '-translate-y-[7px] -rotate-45' : ''}`} />
-        </button>
-
       </div>
 
       {/* Mobile dropdown */}
       {isOpen && (
-        <ul className="md:hidden list-none flex flex-col px-4 pb-4 pt-2 gap-1">
-          {navLinks.map(({ to, label }) => (
-            <li key={to}>
+        <div className="md:hidden bg-slate-900/95 border-b border-white/10">
+          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            {navLinks.map(({ to, label }) => (
               <Link
+                key={to}
                 to={to}
                 onClick={() => setIsOpen(false)}
-                className="block px-3 py-2.5"
+                className="text-gray-300 hover:text-cyan-400 hover:bg-white/5 block px-3 py-2 rounded-md text-base font-medium transition-colors"
               >
                 {label}
               </Link>
-            </li>
-          ))}
-        </ul>
+            ))}
+          </div>
+        </div>
       )}
     </nav>
   )

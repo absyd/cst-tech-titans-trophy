@@ -12,7 +12,7 @@ import NewsDetailPage from './pages/NewsDetailPage'
 function App() {
   return (
     <Router>
-      <div className="container">
+      <div className="container mx-auto">
         <Navigation />
         <Routes>
           <Route path="/" element={<HomePage />} />
