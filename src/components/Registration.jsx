@@ -20,13 +20,13 @@ function Registration() {
                 <div className="contact-value">01321063723</div>
               </div>
             </div>
-            <div className="contact-item">
+            {/* <div className="contact-item">
               <span className="contact-icon">📧</span>
               <div>
                 <div className="contact-label">Email</div>
                 <div className="contact-value">info@csttrophy.com</div>
               </div>
-            </div>
+            </div> */}
           </div>
           <div className="registration-note">
             <span className="note-icon">⚠️</span>

@@ -18,7 +18,7 @@ function Hero({ timeLeft }) {
         High-energy tournament full of skill, strategy, and team spirit.
       </p>
       {/* Latest News Preview */}
-      <LatestNewsPreview  />
+      {/* <LatestNewsPreview  /> */}
       
       <Countdown timeLeft={timeLeft} />
       
