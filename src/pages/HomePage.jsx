@@ -51,12 +51,12 @@ function HomePage() {
       </div>
 
       <Registration />
-      <RegistrationCTA />
-      <InfoCards />
-      <About />
-      <Teams teams={teamsData} />
+      {/* <RegistrationCTA /> */}
       <MatchSchedule matches={matchesData} />
       <Standings standings={standingsData} />
+      <Teams teams={teamsData} />
+      <InfoCards />
+      <About />
       <Rules rules={rulesData} />
       {/* <Sponsors /> */}
       {/* <SocialLinks /> */}

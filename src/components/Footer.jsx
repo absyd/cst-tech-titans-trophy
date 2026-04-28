@@ -4,9 +4,9 @@ function Footer() {
       <div className="footer-content">
         <div className="footer-section">
           <h3>Contact Us</h3>
-          <p>📞 01782536760</p>
-          <p>📞 01321063723</p>
-          <p>📧 info@csttrophy.com</p>
+          <p>📞 01782536760 (Fahim Shahriar - CS/7/1)</p>
+          <p>📞 01321063723 (Tanvir - CS/7/2)</p>
+          {/* <p>fahimshah</p> */}
           <p>📍 RPI Central Ground</p>
         </div>
         <div className="footer-section">
