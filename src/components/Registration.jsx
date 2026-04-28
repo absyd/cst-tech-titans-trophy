@@ -25,8 +25,8 @@ function Registration() {
             <div className="flex items-center justify-center gap-4 p-4 bg-white/5 rounded-2xl border border-white/10">
               <div>
                 <div className="text-cyan-400 font-semibold text-sm mb-1">Phone</div>
-                <div className="text-white font-bold">01782536760 (Fahim - CS/7/1)</div>
-                <div className="text-white font-bold">01321063723 (Tanvir - CS/7/2)</div>
+                <div className="text-white font-bold">01321063723 (Fahim - CS/7/1)</div>
+                <div className="text-white font-bold">01782536760 (Tanvir - CS/7/2)</div>
               </div>
             </div>
           </div>
