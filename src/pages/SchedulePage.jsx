@@ -1,15 +1,11 @@
-import { useState } from 'react'
 import MatchSchedule from '../components/MatchSchedule'
 import Footer from '../components/Footer'
+import { matchesData } from '../data/matchesData'
 
 function SchedulePage() {
-  const matches = [
-    { id: 1, date: 'May 2, 09:00 AM', team1: 'Coming Soon', team2: 'Coming Soon', venue: 'RPI Central Field' }
-  ]
-
   return (
     <div>
-      <MatchSchedule matches={matches} />
+      <MatchSchedule matches={matchesData} />
       <Footer />
     </div>
   )

@@ -8,6 +8,7 @@ function Navigation() {
           <Link to="/">CST TECH TITANS TROPHY</Link>
         </div>
         <ul className="nav-links">
+          <li><Link to="/">Home</Link></li>
           <li><Link to="/about">About</Link></li>
           <li><Link to="/teams">Teams</Link></li>
           <li><Link to="/schedule">Schedule</Link></li>

@@ -1,15 +1,12 @@
-import { useState } from 'react'
 import Teams from '../components/Teams'
 import Footer from '../components/Footer'
+import { teamsData } from '../data/teamsData'
 
 function TeamsPage() {
-  const teams = [
-    { id: 1, name: 'Coming Soon', captain: 'Coming Soon', emoji: '⚔️' },
-  ]
 
   return (
     <div>
-      <Teams teams={teams} />
+      <Teams teams={teamsData} />
       <Footer />
     </div>
   )

@@ -1,18 +1,11 @@
-import { useState } from 'react'
 import Rules from '../components/Rules'
 import Footer from '../components/Footer'
+import { rulesData } from '../data/rulesData'
 
 function RulesPage() {
-  const rules = [
-    {
-      title: 'Coming Soon',
-      description: 'Rules Are Coming Soon'
-    }
-  ]
-
   return (
     <div>
-      <Rules rules={rules} />
+      <Rules rules={rulesData} />
       <Footer />
     </div>
   )
