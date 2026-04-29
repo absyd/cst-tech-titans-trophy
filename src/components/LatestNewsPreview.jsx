@@ -9,7 +9,7 @@ const LatestNewsPreview = () => {
 
   return (
     <div className="w-full mx-auto md:mb-0 mb-2">
-      <div className="bg-gradient-to-br from-cyan-500/10 to-blue-600/10 backdrop-blur-md rounded-xl p-4 border border-cyan-400/30 shadow-lg shadow-cyan-500/10 h-42 flex justify-center items-center flex-col">
+      <div className="bg-gradient-to-br from-blue-500 to-blue-600  rounded-lg p-4   h-42 flex justify-center items-center flex-col">
         {/* Header */}
         {/* <div className="flex items-center gap-2 mb-2">
           <span className="w-2 h-2 bg-cyan-400 rounded-full animate-pulse" />
