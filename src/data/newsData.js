@@ -42,6 +42,6 @@ export const newsData = [
     content: "We are excited to announce that registration for the CST Tech Titans Trophy 2026 is now officially open. Teams from all departments are invited to participate in this exciting cricket tournament. The registration deadline is April 25, 2026, so make sure to register your team early to secure your spot in this prestigious event.",
     date: "2026-04-15",
     author: "Tournament Committee",
-    category: "Registration"
+    category: "Announcement"
   },
 ]
