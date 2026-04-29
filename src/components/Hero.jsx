@@ -17,7 +17,10 @@ function Hero({ timeLeft }) {
 
 
       <p className="sub font-family['Montserrat', sans-serif]">
-        High-energy tournament full of skill, strategy, and team spirit.         <p className='text-sm text-gray-600'>Built with ... by <a href="https://absyd.xyz" className="link text-blue-400 underline">Abu Sayed</a></p>
+        High-energy tournament full of skill, strategy, and team spirit.         
+        <p className='text-sm text-gray-600'>Built with ... by 
+          <a href="https://absyd.xyz" className="link text-blue-400 underline">Abu Sayed</a>
+        </p>
 
       </p>
       {/* Latest News Preview */}
@@ -27,7 +30,7 @@ function Hero({ timeLeft }) {
       </div>
 
 
-      <div className="my-2">  
+      <div className="my-2">
         <ThemeSong />
       </div>
 

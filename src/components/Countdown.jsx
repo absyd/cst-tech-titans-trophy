@@ -7,7 +7,7 @@ function Countdown({ timeLeft }) {
   ]
 
   return (
-    <div className="w-full mx-auto px-4 py-4 bg-blue-900 rounded-lg h-42">
+    <div className="w-full mx-auto px-4 py-4 bg-gradient-to-br from-blue-700 via-sky-600 to-blue-600 rounded-lg h-42">
       <h2 className="text-lg md:text-xl font-bold text-center text-white mb-2 tracking-wide">
         TOURNAMENT STARTS IN
       </h2>
