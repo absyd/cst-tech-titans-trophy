@@ -16,7 +16,7 @@ const ThemeSong = () => {
   }
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 mx-auto w-48 bottom-4 z-50">
+    <div className="fixed bottom-0 left-0 right-0 mx-auto w-52 bottom-4 z-50">
       <div className="bg-gradient-to-br from-slate-800/90 to-slate-900/90 backdrop-blur-lg rounded-2xl p-3 border border-cyan-400/30 shadow-xl shadow-cyan-500/10">
         {/* Hidden native audio element */}
         <audio 

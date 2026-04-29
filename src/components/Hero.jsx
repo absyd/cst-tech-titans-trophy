@@ -9,7 +9,7 @@ function Hero({ timeLeft }) {
   const latestNews = newsData[0] // Get the first (latest) news item
 
   return (
-    <div className="hero flex flex-col justify-center items-between    ">
+    <div className="hero flex flex-col justify-center items-between    min-h-[80vh]">
       <div className="logo-section flex justify-center items-center">
         <img src={logoImage} alt="CST Tech Titans Trophy 2026" className="md:w-64 md:h-64 w-48 h-48" />
       </div>

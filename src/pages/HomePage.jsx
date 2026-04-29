@@ -45,8 +45,10 @@ function HomePage() {
       <Hero timeLeft={timeLeft} />
 
 
+      <div className="mt-64">
 
       <Registration />
+      </div>
       {/* <RegistrationCTA /> */}
       <MatchSchedule matches={matchesData} />
       <Standings standings={standingsData} />
