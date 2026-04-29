@@ -3,20 +3,31 @@ import { Link } from 'react-router-dom'
 import { newsData } from '../data/newsData'
 
 const LatestNewsPreview = () => {
-  const latestNews = newsData[0]
+  const latestNews = newsData[newsData.length-1]
+
+  if (!latestNews) return null
 
   return (
-    <div className="text-center py-2 bg-blue-900 rounded-lg">
-      <div className="inline-block">
-
-        <h3 className="text-xl font-medium text-white mt-3">
-          {latestNews.title}
+    <div className="w-full mx-auto md:mb-0 mb-2">
+      <div className="bg-gradient-to-br from-cyan-500/10 to-blue-600/10 backdrop-blur-md rounded-xl p-4 border border-cyan-400/30 shadow-lg shadow-cyan-500/10 h-42 flex justify-center items-center flex-col">
+        {/* Header */}
+        {/* <div className="flex items-center gap-2 mb-2">
+          <span className="w-2 h-2 bg-cyan-400 rounded-full animate-pulse" />
+          <span className="text-xs font-bold text-cyan-400 uppercase tracking-wider">Latest News</span>
+        </div> */}
+        
+        {/* Title */}
+        <h3 className="text-base md:text-lg font-semibold text-white mb-2 line-clamp-2">
+          {latestNews.title.slice(0, 100)}
         </h3>
+        
+        {/* Link */}
         <Link 
           to={`/news/${latestNews.id}`}
-          className="text-blue-400 hover:text-blue-300 text-sm"
+          className="inline-flex items-center gap-1 text-sm text-cyan-400 hover:text-cyan-300 font-medium transition-colors group"
         >
-          Read More →
+          Read More 
+          <span className="transform group-hover:translate-x-1 transition-transform">→</span>
         </Link>
       </div>
     </div>

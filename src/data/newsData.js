@@ -34,5 +34,14 @@ export const newsData = [
     date: "2026-04-05",
     author: "Sponsorship Team",
     category: "Announcement"
-  }
+  },
+  {
+    id: 5,
+    title: "টিম সিলেকশন এর লটারি অনুষ্ঠিত হবে আগামীকাল বৃহস্পতিবার (৩০-০৪-২৬) দুপুর ১:০০ ঘটিকার সময় ।",
+    summary: "Registration for CST Tech Titans Trophy 2026 is now open. Teams can register until April 25, 2026.",
+    content: "We are excited to announce that registration for the CST Tech Titans Trophy 2026 is now officially open. Teams from all departments are invited to participate in this exciting cricket tournament. The registration deadline is April 25, 2026, so make sure to register your team early to secure your spot in this prestigious event.",
+    date: "2026-04-15",
+    author: "Tournament Committee",
+    category: "Registration"
+  },
 ]

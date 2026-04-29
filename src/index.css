@@ -151,9 +151,6 @@ body {
 }
 
 /* HERO */
-.hero {
-  margin-bottom: 60px;
-}
 
 .hero h1 {
   font-family: 'Orbitron', sans-serif;
@@ -161,7 +158,6 @@ body {
   font-weight: 900;
   letter-spacing: -1px;
   line-height: 1.1;
-  margin-bottom: 10px;
 }
 
 .hero span {
@@ -174,25 +170,15 @@ body {
   color: var(--text-secondary);
   font-weight: 300;
   letter-spacing: 0.5px;
-  margin-bottom: 40px;
 }
 
 /* HERO COUNTDOWN */
-.hero-countdown {
-  padding: 20px;
-  margin-bottom: 40px;
-}
 
 .hero-countdown h2 {
   font-size: clamp(18px, 3vw, 24px);
-  margin-bottom: 10;
 }
 
 /* HERO INFO CARDS */
-.hero-info {
-  margin-bottom: 0;
-  gap: 16px;
-}
 
 .hero-info .card {
   width: 180px;
@@ -258,11 +244,6 @@ body {
   font-weight: 400;
 }
 
-/* TAGLINE */
-.tagline {
-  margin-bottom: 80px;
-}
-
 .tagline h2 {
   font-family: 'Orbitron', sans-serif;
   font-size: clamp(28px, 4vw, 40px);
@@ -283,8 +264,7 @@ body {
   border: 1px solid var(--border-subtle);
   border-radius: 20px;
   backdrop-filter: blur(20px);
-  margin-bottom: 10px;
-}
+ }
 
 .countdown h2 {
   font-family: 'Orbitron', sans-serif;
@@ -292,8 +272,7 @@ body {
   font-weight: 700;
   letter-spacing: 2px;
   color: var(--primary);
-  margin-bottom: 40px;
-}
+ }
 
 .countdown-timer {
   display: flex;
@@ -338,8 +317,7 @@ body {
   letter-spacing: -0.5px;
   color: var(--primary);
   text-shadow: 0 0 30px var(--primary-glow);
-  margin-bottom: 48px;
-}
+ }
 
 /* TEAMS */
 .teams-grid {

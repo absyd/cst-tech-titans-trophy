@@ -44,11 +44,7 @@ function HomePage() {
     <div>
       <Hero timeLeft={timeLeft} />
 
-      {/* TAGLINE */}
-      <div className="tagline">
-        <h2>CODE THE GAME.</h2>
-        <h2 className="gold">RULE THE PITCH.</h2>
-      </div>
+
 
       <Registration />
       {/* <RegistrationCTA /> */}
