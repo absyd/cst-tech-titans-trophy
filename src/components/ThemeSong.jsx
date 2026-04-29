@@ -1,5 +1,5 @@
 import { useState, useRef } from 'react'
-
+import themeSong from '../assets/theme-song.mp3'
 const ThemeSong = () => {
   const [isPlaying, setIsPlaying] = useState(false)
   const audioRef = useRef(null)
@@ -21,7 +21,7 @@ const ThemeSong = () => {
         {/* Hidden native audio element */}
         <audio 
           ref={audioRef} 
-          src="/theme-song.mp3" 
+          src={themeSong} 
           onEnded={() => setIsPlaying(false)}
           onPause={() => setIsPlaying(false)}
           onPlay={() => setIsPlaying(true)}
