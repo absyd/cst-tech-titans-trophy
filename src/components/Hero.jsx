@@ -14,6 +14,9 @@ function Hero({ timeLeft }) {
       </div>
       <h1>WHERE <span>CODERS</span> MEET CRICKET!</h1>
 
+      <div className=" flex justify-center align-center">
+        <p>Built with <span className="heart">❤️</span> by <a href="https://absyd.xyz" className="link text-blue-400 font-bold underline">Abu Sayed</a></p>
+      </div>
       <p className="sub">
         High-energy tournament full of skill, strategy, and team spirit.
       </p>
