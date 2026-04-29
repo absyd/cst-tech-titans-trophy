@@ -3,6 +3,7 @@ import Countdown from './Countdown'
 import { Link } from 'react-router-dom'
 import { newsData } from '../data/newsData'
 import LatestNewsPreview from './LatestNewsPreview'
+import ThemeSong from './ThemeSong'
 
 function Hero({ timeLeft }) {
   const latestNews = newsData[0] // Get the first (latest) news item
@@ -24,14 +25,21 @@ function Hero({ timeLeft }) {
         <LatestNewsPreview />
         <Countdown timeLeft={timeLeft} />
       </div>
+
+
+      <div className="my-2">  
+        <ThemeSong />
+      </div>
+
+
       <div className="">
-              {/* TAGLINE */}
-      <div className="tagline md:mt-24 mt-3">
-        <h2>CODE THE GAME.</h2>
-        <h2 className="gold">RULE THE PITCH.</h2>
+        {/* TAGLINE */}
+        <div className="tagline md:mt-10 mt-2">
+          <h2>CODE THE GAME.</h2>
+          <h2 className="gold">RULE THE PITCH.</h2>
+        </div>
       </div>
-      </div>
-      
+
     </div>
   )
 }
