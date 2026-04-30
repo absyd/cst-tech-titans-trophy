@@ -25,7 +25,7 @@ export const standingsData = [
     id: 3,
     teamId: 3,
     rank: 3,
-    teamName: "Cyber Strykers - CST/5/2",
+    teamName: "Cyber Strikers - CST/5/2",
     played: 0,
     won: 0,
     lost: 0,

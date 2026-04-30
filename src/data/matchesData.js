@@ -17,7 +17,7 @@ export const matchesData = [
     match_type: "Selection Round",
     date: 'May 2, 10:00 AM',
     team1: '7/1 Warriors - CST/7/1',
-    team2: 'Cyber Strykers - CST/5/2',
+    team2: 'Cyber Strikers - CST/5/2',
     venue: 'RPI Central Field',
     status: 'Upcoming',
     metrics: { winner: null, score: null, wickets: null },
