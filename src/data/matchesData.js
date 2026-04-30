@@ -1,5 +1,83 @@
 export const matchesData = [
-  { id: 1, date: 'May 2, 09:00 AM', team1: 'Coming Soon', team2: 'Coming Soon', venue: 'RPI Central Field',status:'Upcoming',metrics: {winner: null, score: null,wickets: null} , winner_display:null},
-  { id: 2, date: 'May 2, 09:00 AM', team1: 'Coming Soon', team2: 'Coming Soon', venue: 'RPI Central Field',status:'Live',metrics: {winner: null, score: null,wickets: null} , winner_display:null },
-  { id: 3, date: 'May 2, 09:00 AM', team1: 'Coming Soon', team2: 'Coming Soon', venue: 'RPI Central Field',status:'Completed',metrics: {winner: 'team1', score: 120,wickets: 8} , winner_display:"Team 1 Winned By 8 Wickets" },
-]
+  {
+    id: 1,
+    match_type: "Selection Round",
+    date: 'May 2, 08:00 AM',
+    team1: 'Disaster Strykers - CST/3/1',
+    team2: 'Binary Titans - CST/7/2',
+    venue: 'RPI Central Field',
+    status: 'Upcoming',
+    metrics: { winner: null, score: null, wickets: null },
+    winner_display: null,
+    team1_logo: "/team-logo/disaster-strykers",
+    team2_logo: "/team-logo/binary-titans"
+  },
+  {
+    id: 2,
+    match_type: "Selection Round",
+    date: 'May 2, 10:00 AM',
+    team1: '7/1 Warriors - CST/7/1',
+    team2: 'Cyber Strykers - CST/5/2',
+    venue: 'RPI Central Field',
+    status: 'Upcoming',
+    metrics: { winner: null, score: null, wickets: null },
+    winner_display: null,
+    team1_logo: "/team-logo/7_1_Warriors",
+    team2_logo: "/team-logo/cyber-strykers"
+  },
+  {
+    id: 3,
+    match_type: "Selection Round",
+    date: 'May 2, 3:00 PM',
+    team1: 'Cyber Warriors - CST/2/2',
+    team2: 'Silicon Superstars - CST/3/2',
+    venue: 'RPI Central Field',
+    status: 'Upcoming',
+    metrics: { winner: null, score: null, wickets: null },
+    winner_display: null,
+    team1_logo: "/team-logo/cyber-warriors",
+    team2_logo: "/team-logo/silicon-superstars"
+  },
+
+  // Day 2
+
+  {
+    id: 4,
+    match_type: "Semi Final",
+    date: 'May 3, 8:00 AM',
+    team1: 'Winner Of Selection Round - 1',
+    team2: 'Winner Of Selection Round - 2',
+    venue: 'RPI Central Field',
+    status: 'Upcoming',
+    metrics: { winner: null, score: null, wickets: null },
+    winner_display: null,
+    team1_logo: null,
+    team2_logo: null
+  },
+  {
+    id: 5,
+    match_type: "Semi Final",
+    date: 'May 3, 10:00 AM',
+    team1: 'Winner Of Selection Round - 3',
+    team2: 'RPI Teachers Group (TG)',
+    venue: 'RPI Central Field',
+    status: 'Upcoming',
+    metrics: { winner: null, score: null, wickets: null },
+    winner_display: null,
+    team1_logo: null,
+    team2_logo: null
+  },
+  {
+    id: 6,
+    match_type: "Final",
+    date: 'May 3, 12:00 PM',
+    team1: 'Winner Of Semi Final - 1',
+    team2: 'Winner Of Semi Final - 2',
+    venue: 'RPI Central Field',
+    status: 'Upcoming',
+    metrics: { winner: null, score: null, wickets: null },
+    winner_display: null,
+    team1_logo: null,
+    team2_logo: null
+  }
+];
