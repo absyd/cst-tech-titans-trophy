@@ -1,78 +1,102 @@
-function Standings({ standings }) {
-  const getRankColor = (rank) => {
-    switch(rank) {
-      case 1: return 'text-yellow-400'
-      case 2: return 'text-gray-300'
-      case 3: return 'text-orange-400'
-      default: return 'text-white'
-    }
-  }
+import { teamsData } from "../data/teamsData";
 
-  const getRankBg = (rank) => {
-    switch(rank) {
-      case 1: return 'bg-yellow-500/10'
-      case 2: return 'bg-gray-500/10'
-      case 3: return 'bg-orange-500/10'
-      default: return 'bg-white/5'
+function Standings({ standings }) {
+  const getTeamById = (id) => {
+    return teamsData.find((team) => team.id === id);
+  };
+
+  const getStatusColor = (status) => {
+    switch (status) {
+      case "Champion":
+        return "text-yellow-400 bg-yellow-500/10";
+      case "Eliminated":
+        return "text-red-400 bg-red-500/10";
+      default:
+        return "text-cyan-400 bg-cyan-500/10";
     }
-  }
+  };
 
   return (
-    <div id="standings" className="w-full max-w-6xl mx-auto px-4 py-16 md:py-24">
-      {/* Section Title */}
-      <div className="text-center mb-12 md:mb-16">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white mb-4">
-          <span className="text-yellow-400">🏆</span> STANDINGS
+    <div id="standings" className="w-full max-w-6xl mx-auto py-16 md:py-24">
+      
+      {/* Header */}
+      <div className="text-center mb-12">
+        <h2 className="text-3xl sm:text-5xl font-black text-white mb-3">
+          🏆 TOURNAMENT STANDINGS
         </h2>
-        <div className="w-24 h-1 bg-gradient-to-r from-yellow-400 to-cyan-400 mx-auto rounded-full" />
+        <p className="text-gray-400 text-sm md:text-base">
+          Knockout progress tracker (Selection → Semi Final → Final)
+        </p>
+        <div className="w-28 h-1 bg-gradient-to-r from-yellow-400 to-cyan-400 mx-auto mt-4 rounded-full" />
       </div>
 
-      {/* Table Container */}
-      <div className="bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-lg rounded-2xl border border-white/10 overflow-hidden">
-        <div className="overflow-x-auto">
-          <table className="w-full">
-            <thead>
-              <tr className="bg-gradient-to-r from-cyan-500/20 to-blue-500/20 border-b border-white/10">
-                <th className="px-3 py-3 md:px-6 md:py-4 text-left text-cyan-400 font-bold text-xs md:text-sm uppercase tracking-wider">Rank</th>
-                <th className="px-3 py-3 md:px-6 md:py-4 text-left text-cyan-400 font-bold text-xs md:text-sm uppercase tracking-wider">Team</th>
-                <th className="px-3 py-3 md:px-6 md:py-4 text-center text-cyan-400 font-bold text-xs md:text-sm uppercase tracking-wider">P</th>
-                <th className="px-3 py-3 md:px-6 md:py-4 text-center text-cyan-400 font-bold text-xs md:text-sm uppercase tracking-wider">W</th>
-                <th className="px-3 py-3 md:px-6 md:py-4 text-center text-cyan-400 font-bold text-xs md:text-sm uppercase tracking-wider">L</th>
-                <th className="px-3 py-3 md:px-6 md:py-4 text-center text-cyan-400 font-bold text-xs md:text-sm uppercase tracking-wider">Pts</th>
-              </tr>
-            </thead>
-            <tbody>
-              {standings.map((team) => (
-                <tr 
-                  key={team.rank} 
-                  className={`border-b border-white/5 hover:bg-white/5 transition-colors ${getRankBg(team.rank)}`}
-                >
-                  <td className={`px-3 py-3 md:px-6 md:py-4 font-black text-lg md:text-xl ${getRankColor(team.rank)}`}>
-                    {team.rank}
-                  </td>
-                  <td className="px-3 py-3 md:px-6 md:py-4 font-semibold text-white text-sm md:text-base">
-                    {team.team}
-                  </td>
-                  <td className="px-3 py-3 md:px-6 md:py-4 text-center text-gray-400 text-sm md:text-base">
-                    {team.played}
-                  </td>
-                  <td className="px-3 py-3 md:px-6 md:py-4 text-center text-green-400 font-semibold text-sm md:text-base">
-                    {team.won}
-                  </td>
-                  <td className="px-3 py-3 md:px-6 md:py-4 text-center text-red-400 font-semibold text-sm md:text-base">
-                    {team.lost}
-                  </td>
-                  <td className="px-3 py-3 md:px-6 md:py-4 text-center text-yellow-400 font-bold text-sm md:text-base">
-                    {team.points}
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+      {/* Grid instead of rigid table */}
+      <div className="grid gap-2 md:gap-4">
+        {standings.slice().sort((a, b) => a.rank - b.rank)
+          .map((row) => {
+            const team = getTeamById(row.teamId);
+
+            return (
+              <div
+                key={row.teamId}
+                className="flex flex-col md:flex-row md:items-center justify-between gap-4 p-4 md:p-6 rounded-2xl
+                bg-gradient-to-br from-white/5 to-white/[0.02]
+                border border-white/10 hover:border-cyan-400/30 transition"
+              >
+                {/* LEFT: Rank + Team */}
+                <div className="flex md:flex-row flex-col items-center gap-4 md:w-[50%] w-full">
+                  
+                  {/* Rank Circle */}
+                  <div className="w-12 h-12 flex items-center justify-center rounded-full bg-white/10 text-white font-bold">
+                    {row.rank}
+                  </div>
+
+                  {/* Logo */}
+                  <img
+                    src={team?.team_logo + ".jpg"}
+                    alt={team?.name}
+                    className="w-24 h-24 rounded-full object-cover border border-white/20"
+                  />
+
+                  {/* Name + Stage */}
+                  <div>
+                    <h3 className="text-white font-semibold text-sm md:text-base">
+                      {team?.name}
+                    </h3>
+                    <p className="text-xs text-gray-400">
+                      Stage: {row.stage}
+                    </p>
+                  </div>
+                </div>
+
+                {/* CENTER: Stats */}
+                <div className="flex gap-6 text-center justify-center items-center">
+                  <div>
+                    <p className="text-gray-400 text-xs">Played</p>
+                    <p className="text-white font-bold">{row.played}</p>
+                  </div>
+
+                  <div>
+                    <p className="text-gray-400 text-xs">Won</p>
+                    <p className="text-green-400 font-bold">{row.won}</p>
+                  </div>
+
+                  <div>
+                    <p className="text-gray-400 text-xs">Lost</p>
+                    <p className="text-red-400 font-bold">{row.lost}</p>
+                  </div>
+                </div>
+
+                {/* RIGHT: Status */}
+                <div className={`px-3 py-1 rounded-full text-xs font-semibold ${getStatusColor(row.status)}`}>
+                  {row.status}
+                </div>
+              </div>
+            );
+          })}
       </div>
     </div>
-  )
+  );
 }
 
-export default Standings
+export default Standings;
