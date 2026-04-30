@@ -18,7 +18,7 @@ function Hero({ timeLeft }) {
 
       <p className="sub font-family['Montserrat', sans-serif]">
         High-energy tournament full of skill, strategy, and team spirit.         
-        <p className='text-sm text-gray-600'>Built with ... by 
+        <p className='text-sm text-gray-300'>Built with ... by 
           <a href="https://absyd.xyz" className="link text-blue-400 underline">Abu Sayed</a>
         </p>
 
