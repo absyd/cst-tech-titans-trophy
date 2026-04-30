@@ -70,7 +70,7 @@ export const matchesData = [
   {
     id: 6,
     match_type: "Final",
-    date: 'May 3, 12:00 PM',
+    date: 'May 3, 4:00 PM',
     team1: 'Winner Of Semi Final - 1',
     team2: 'Winner Of Semi Final - 2',
     venue: 'RPI Central Field',

@@ -46,10 +46,10 @@ export const newsData = [
   },
     {
     id: 6,
-    title: "Match Schedule : https://cst-tech-titans-trophy.vercel.app/schedule",
+    title: "Match Schedule Published : https://cst-tech-titans-trophy.vercel.app/schedule",
     summary: "Match schedule is now available. Please check the schedule for match dates and venues.",
     content: "Match schedule is now available. Please check the schedule for match dates and venues.",
-    date: "2026-04-15",
+    date: "2026-04-16",
     author: "Tournament Committee",
     category: "Announcement"
   },
