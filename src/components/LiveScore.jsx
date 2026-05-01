@@ -13,6 +13,52 @@ const getTeamById = (id) =>
     team_logo: null,
   };
 
+
+  const getMatchStatusPill = (status) => {
+    switch (status) {
+      case 'live':
+        return (
+          <span className="flex items-center gap-1.5 text-[10px] sm:text-xs bg-red-500/20 text-red-400 px-2 sm:px-3 py-1 rounded-full border border-red-500/30 font-bold uppercase tracking-wider">
+            <span className="w-1.5 h-1.5 bg-red-500 rounded-full animate-pulse" />
+            Live
+          </span>
+        );
+      case 'upcoming':
+        return (
+          <span className="flex items-center gap-1.5 text-[10px] sm:text-xs bg-cyan-500/20 text-cyan-400 px-2 sm:px-3 py-1 rounded-full border border-cyan-500/30 font-bold uppercase tracking-wider">
+            <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
+            </svg>
+            Upcoming
+          </span>
+        );
+      case 'completed':
+        return (
+          <span className="flex items-center gap-1.5 text-[10px] sm:text-xs bg-green-500/20 text-green-400 px-2 sm:px-3 py-1 rounded-full border border-green-500/30 font-bold uppercase tracking-wider">
+            <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+            </svg>
+            Completed
+          </span>
+        );
+        case 'break':
+        return (
+          <span className="flex items-center gap-1.5 text-[10px] sm:text-xs bg-yellow-500/20 text-yellow-400 px-2 sm:px-3 py-1 rounded-full border border-yellow-500/30 font-bold uppercase tracking-wider">
+            <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+            </svg>
+            Break
+          </span>
+        );
+      default:
+        return (
+          <span className="flex items-center gap-1.5 text-[10px] sm:text-xs bg-gray-500/20 text-gray-400 px-2 sm:px-3 py-1 rounded-full border border-gray-500/30 font-bold uppercase tracking-wider">
+            Unknown
+          </span>
+        );
+    }
+  };
+
 export default function LiveMatchCard() {
   const [live, setLive] = useState(null);
 
@@ -66,10 +112,7 @@ export default function LiveMatchCard() {
           {matchMeta?.match_type || "Match"}
         </span>
 
-        <span className="flex items-center gap-1.5 text-[10px] sm:text-xs bg-cyan-500/20 text-cyan-400 px-2 sm:px-3 py-1 rounded-full border border-cyan-500/30">
-          <span className="w-1.5 h-1.5 bg-cyan-500 rounded-full animate-pulse" />
-          UPCOMING
-        </span>
+        {getMatchStatusPill(live.status)}
       </div>
 
       {/* Teams - Mobile Optimized */}
