@@ -16,6 +16,8 @@ import { teamsData } from '../data/teamsData'
 import { matchesData } from '../data/matchesData'
 import { standingsData } from '../data/standingsData'
 import { rulesData } from '../data/rulesData'
+import LiveScore from '../components/LiveScore'
+import { Link } from 'react-router-dom'
 
 function HomePage() {
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 })
@@ -42,12 +44,21 @@ function HomePage() {
 
   return (
     <div>
+
+
+
+      <div className="my-6 container mx-auto">
+        <LiveScore />
+        <Link to="/live-score" className="p-3 bg-cyan-600 hover:bg-cyan-700 rounded-lg my-3 block text-center transition-colors">
+          View Live Score
+        </Link>
+      </div>
       <Hero timeLeft={timeLeft} />
 
 
       <div className="mt-64">
 
-      <Registration />
+      {/* <Registration /> */}
       </div>
       {/* <RegistrationCTA /> */}
       <MatchSchedule matches={matchesData} />

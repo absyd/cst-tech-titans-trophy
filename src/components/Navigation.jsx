@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 
 const navLinks = [
   { to: '/',          label: 'Home' },
+  { to: '/live-score',          label: 'Live Score' },
   { to: '/about',     label: 'About' },
   { to: '/teams',     label: 'Teams' },
   { to: '/schedule',  label: 'Schedule' },

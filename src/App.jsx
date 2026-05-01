@@ -8,6 +8,7 @@ import StandingsPage from './pages/StandingsPage'
 import RulesPage from './pages/RulesPage'
 import NewsPage from './pages/NewsPage'
 import NewsDetailPage from './pages/NewsDetailPage'
+import LiveScorePage from './pages/LiveScore'
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/rules" element={<RulesPage />} />
           <Route path="/news" element={<NewsPage />} />
           <Route path="/news/:id" element={<NewsDetailPage />} />
+          <Route path="/live-score" element={<LiveScorePage />} />
         </Routes>
       </div>
     </Router>
