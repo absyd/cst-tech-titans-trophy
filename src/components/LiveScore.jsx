@@ -209,7 +209,7 @@ export default function LiveMatchCard() {
             <p className="text-xs sm:text-sm font-semibold truncate leading-tight">
               {team1.name}
             </p>
-            <p className="text-[10px] sm:text-xs text-cyan-400">
+            <p className="text-[10px] sm:text-xs text-cyan-400 text-right">
               {team1.id == live.batting_team_id ? "🏏 Batting" : "🏐 Bowling"}
             </p>
           </div>
