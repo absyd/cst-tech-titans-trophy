@@ -89,7 +89,7 @@ const team2  = getTeamById(matchMeta.team2_id);
 
           <div className="min-w-0">
             <p className="text-xs sm:text-sm font-semibold truncate leading-tight">{team1.name}</p>
-            <p className="text-[10px] sm:text-xs  text-right text-cyan-400">Batting</p>
+            <p className="text-[10px] sm:text-xs  text-right text-cyan-400"> {team1.id==live.batting_team_id ? 'Batting' : 'Bowling'}</p>
           </div>
         </div>
 
@@ -99,7 +99,7 @@ const team2  = getTeamById(matchMeta.team2_id);
         <div className="flex md:flex-row flex-row-reverse items-center w-l  gap-2 sm:gap-3 flex-1 justify-end text-right ">
           <div className="min-w-0">
             <p className="text-xs sm:text-sm font-semibold truncate leading-tight">{team2.name}</p>
-            <p className="text-[10px] text-right sm:text-xs text-orange-500">Bowling</p>
+            <p className="text-[10px] text-right sm:text-xs text-orange-500"> {team2.id==live.bowling_team_id ? 'Bowling' : 'Batting'}</p>
           </div>
 
           <div className="w-12 h-12 sm:w-12 sm:h-12 rounded-full bg-gradient-to-br from-orange-500/20 to-red-500/20 border border-orange-400/30 flex items-center justify-center overflow-hidden flex-shrink-0">
