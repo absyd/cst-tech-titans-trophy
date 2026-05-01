@@ -47,16 +47,16 @@ function HomePage() {
 
 
 
-      <div className="my-6 container mx-auto">
+      <div className="my-2 mb-12">
         <LiveScore />
-        <Link to="/live-score" className="p-3 bg-cyan-600 hover:bg-cyan-700 rounded-lg my-3 block text-center transition-colors">
+        <Link to="/live-score" className="p-2 text-sm sm:p-3 my-2 my-2 sm:my-3 bg-cyan-600 hover:bg-cyan-700 rounded-lg block text-center transition-colors max-w-3xl mx-auto">
           View Live Score
         </Link>
       </div>
+      <div className="mt-64">
       <Hero timeLeft={timeLeft} />
 
 
-      <div className="mt-64">
 
       {/* <Registration /> */}
       </div>
