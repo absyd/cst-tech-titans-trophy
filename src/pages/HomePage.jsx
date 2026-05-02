@@ -24,7 +24,7 @@ function HomePage() {
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 })
 
   useEffect(() => {
-    const targetDate = new Date('2026-05-02T09:00:00').getTime()
+    const targetDate = new Date('2026-05-09T08:00:00').getTime()
 
     const timer = setInterval(() => {
       const now = new Date().getTime()
@@ -53,10 +53,16 @@ function HomePage() {
         <Link to="/live-score" className="p-2 text-sm sm:p-3 my-2 my-2 sm:my-3 bg-cyan-600 hover:bg-cyan-700 rounded-lg block text-center transition-colors max-w-3xl mx-auto">
           View Live Score
         </Link> */}
-        <TerminatedHero/>
+        <TerminatedHero timeLeft={timeLeft}/>
       </div>
-      <div className="mt-2">
-      <Hero timeLeft={timeLeft} />
+
+      
+
+
+
+
+      <div className="mt-64">
+      {/* <Hero timeLeft={timeLeft} /> */}
 
 
 
