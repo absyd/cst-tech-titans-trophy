@@ -18,6 +18,7 @@ import { standingsData } from '../data/standingsData'
 import { rulesData } from '../data/rulesData'
 import LiveScore from '../components/LiveScore'
 import { Link } from 'react-router-dom'
+import TerminatedHero from '../components/TerminatedHero'
 
 function HomePage() {
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 })
@@ -48,12 +49,13 @@ function HomePage() {
 
 
       <div className="my-2 mb-12">
-        <LiveScore />
+        {/* <LiveScore />
         <Link to="/live-score" className="p-2 text-sm sm:p-3 my-2 my-2 sm:my-3 bg-cyan-600 hover:bg-cyan-700 rounded-lg block text-center transition-colors max-w-3xl mx-auto">
           View Live Score
-        </Link>
+        </Link> */}
+        <TerminatedHero/>
       </div>
-      <div className="mt-64">
+      <div className="mt-2">
       <Hero timeLeft={timeLeft} />
 
 

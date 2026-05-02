@@ -240,7 +240,9 @@ export default function LiveMatchCard() {
       {/* Notice Marquee — CSS-based, no deprecated <marquee> */}
       {live.notice && (
         <div className="text-center my-2">
-          <CSSMarquee text={live.notice} />
+          {/* <CSSMarquee text={live.notice} />
+           */}
+           <marquee behavior="" direction="" className="text-yellow-400 text-sm font-bold">{live.notice}</marquee>
         </div>
       )}
 
