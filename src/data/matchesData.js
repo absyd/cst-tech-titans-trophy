@@ -2,7 +2,7 @@ export const matchesData = [
   {
     id: 1,
     match_type: "Selection Round",
-    date: 'May 2, 08:00 AM',
+    date: 'May 9, 08:00 AM',
     team1_id: 4,
     team2_id: 2,
     team1: 'Disaster Strykers - CST/3/1',
@@ -17,7 +17,7 @@ export const matchesData = [
   {
     id: 2,
     match_type: "Selection Round",
-    date: 'May 2, 10:00 AM',
+    date: 'May 9, 10:00 AM',
     team1_id: 1,
     team2_id: 3,
     team1: '7/1 Warriors - CST/7/1',
@@ -32,7 +32,7 @@ export const matchesData = [
   {
     id: 3,
     match_type: "Selection Round",
-    date: 'May 2, 3:00 PM',
+    date: 'May 9, 3:00 PM',
     team1_id: 6,
     team2_id: 5,
     team1: 'Cyber Warriors - CST/2/2',
@@ -50,7 +50,7 @@ export const matchesData = [
   {
     id: 4,
     match_type: "Semi Final",
-    date: 'May 3, 8:00 AM',
+    date: 'May 10, 8:00 AM',
     team1_id: null,
     team2_id: null,
     team1: 'Winner Of Selection Round - 1',
@@ -65,7 +65,7 @@ export const matchesData = [
   {
     id: 5,
     match_type: "Semi Final",
-    date: 'May 3, 10:00 AM',
+    date: 'May 10, 10:00 AM',
     team1_id: null,
     team2_id: 7,
     team1: 'Winner Of Selection Round - 2',
@@ -80,7 +80,7 @@ export const matchesData = [
   {
     id: 6,
     match_type: "Final",
-    date: 'May 3, 4:00 PM',
+    date: 'May 10, 4:00 PM',
     team1_id: null,
     team2_id: null,
     team1: 'Winner Of Semi Final - 1',

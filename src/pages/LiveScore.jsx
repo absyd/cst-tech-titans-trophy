@@ -9,8 +9,6 @@ export default function LiveScorePage() {
                     <h1 className='text-2xl font-bold text-yellow-300 mb-2'>Match Termination Notice</h1>
                     <img src="/rain_termination.jpg" className='h-lg w-lg   md:w-xl mx-auto rounded-lg border-2 border-yellow-300' alt="Rain Termination" />
                 </div>
-
-
             </div>
         </div>
     );
