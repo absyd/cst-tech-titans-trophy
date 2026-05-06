@@ -43,7 +43,7 @@ const TerminatedHero = ({ timeLeft }) => {
         {/* Subtitle */}
         <div className="text-center mt-8 sm:mt-12">
           <p className="text-gray-400 text-sm sm:text-base max-w-lg mx-auto">
-            WHERE CODERS MEET CRICKET 
+            "WHERE CODERS MEET CRICKET"
           </p>
           <p className="text-gray-400 text-sm sm:text-base max-w-lg mx-auto">
             CODE THE GAME RULE THE PITCH
