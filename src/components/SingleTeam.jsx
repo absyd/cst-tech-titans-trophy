@@ -117,13 +117,13 @@ const SingleTeam = () => {
                     </h3>
                     <div className="flex gap-1 flex-shrink-0">
                       {player.name.includes('(C)') && (
-                        <span className="inline-flex items-center justify-center w-5 h-5 bg-yellow-400/20 text-yellow-400 text-xs font-bold rounded-full border border-yellow-400/30">
-                          C
+                        <span className="inline-flex items-center justify-center px-2 py-1 bg-yellow-400/20 text-yellow-400 text-xs font-bold rounded-full border border-yellow-400/30">
+                          CAPTAIN
                         </span>
                       )}
                       {player.name.includes('(VC)') && (
-                        <span className="inline-flex items-center justify-center w-5 h-5 bg-orange-400/20 text-orange-400 text-xs font-bold rounded-full border border-orange-400/30">
-                          VC
+                        <span className="inline-flex items-center justify-center px-2 py-1 bg-orange-400/20 text-orange-400 text-xs font-bold rounded-full border border-orange-400/30">
+                          VICE CAPTAIN
                         </span>
                       )}
                     </div>
@@ -133,7 +133,7 @@ const SingleTeam = () => {
                       {player.role.replace('_', ' ').toUpperCase()}
                     </span>
                   </div>
-                  <div className="text-xs text-gray-400">
+                  <div className="text-xs text-gray-400 text-left">
                     ID: {player.id}
                   </div>
                 </div>
@@ -147,10 +147,10 @@ const SingleTeam = () => {
           <table className="w-full text-white">
             <thead>
               <tr className="border-b border-white/20">
-                <th className="text-center py-2 sm:py-3 px-2 sm:px-4 font-semibold text-cyan-400 w-12 text-xs sm:text-sm">SL</th>
-                <th className="text-left py-2 sm:py-3 px-2 sm:px-4 font-semibold text-cyan-400 text-xs sm:text-sm">Player</th>
-                <th className="text-left py-2 sm:py-3 px-2 sm:px-4 font-semibold text-cyan-400 text-xs sm:text-sm">Role</th>
-                <th className="text-center py-2 sm:py-3 px-2 sm:px-4 font-semibold text-cyan-400 text-xs sm:text-sm">Status</th>
+                <th className="text-center py-2 sm:py-3 px-2 sm:px-4 font-semibold text-cyan-400 w-12 text-xs sm:text-sm text-center ">SL</th>
+                <th className=" py-2 sm:py-3 px-2 sm:px-4 font-semibold text-cyan-400 text-xs sm:text-sm text-center ">Player</th>
+                <th className=" py-2 sm:py-3 px-2 sm:px-4 font-semibold text-cyan-400 text-xs sm:text-sm text-center ">Role</th>
+                <th className="text-center py-2 sm:py-3 px-2 sm:px-4 font-semibold text-cyan-400 text-xs sm:text-sm text-center ">Status</th>
               </tr>
             </thead>
             <tbody>
@@ -172,10 +172,10 @@ const SingleTeam = () => {
                         </span>
                       </div>
                       <div className="min-w-0 flex-1">
-                        <div className="font-semibold text-white text-sm sm:text-base truncate">
+                        <div className="font-semibold text-white text-sm sm:text-base truncate ">
                           {player.name.replace(' (C)', '').replace(' (VC)', '')}
                         </div>
-                        <div className="text-xs text-gray-400">
+                        <div className="text-xs text-gray-400 text-center ">
                           ID: {player.id}
                         </div>
                       </div>
@@ -195,7 +195,7 @@ const SingleTeam = () => {
                       )}
                       {player.name.includes('(VC)') && (
                         <span className="inline-flex items-center justify-center px-2 py-1  bg-orange-400/20 text-orange-400 text-xs font-bold rounded-full border border-orange-400/30 p-1">
-                          VICE C.
+                          VICE CAPTAIN
                         </span>
                       )}
                       {!player.name.includes('(C)') && !player.name.includes('(VC)') && (
