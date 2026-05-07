@@ -658,7 +658,7 @@ export const teamsData = [
     name: 'RPI Teachers Group',
     shortName: 'RPI',
     color: '#64748B',
-    logo: '/team-logo/default-logo.jpg',
+    logo: '/team-logo/rpi_tg.jpg',
     players: playersData[6],
     captain: 'MD Faruq Hossain',
     wicketKeeper: 'MD Faruq Hossain',
