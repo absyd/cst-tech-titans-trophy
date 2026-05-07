@@ -170,89 +170,91 @@ export const playersData = [
 
   // 5/2
   [
-    {
-      id: "5/1-001",
-      name: "Rokon (C)",
-      role: "wicket_keeper",
-      battingStyle: "right_hand"
-    },
-    {
-      id: "5/1-002",
-      name: "Jubayer (VC)",
-      role: "bowler",
-      battingStyle: "right_hand",
-      bowlingStyle: "right_fast"
-    },
-    {
-      id: "5/1-003",
-      name: "Nur Tawhid",
-      role: "batsman",
-      battingStyle: "left_hand"
-    },
-    {
-      id: "5/1-004",
-      name: "Shimir",
-      role: "batsman",
-      battingStyle: "right_hand"
-    },
-    {
-      id: "5/1-005",
-      name: "Sobuj",
-      role: "batsman",
-      battingStyle: "left_hand"
-    },
-    {
-      id: "5/1-006",
-      name: "Sajid",
-      role: "wicket_keeper",
-      battingStyle: "right_hand"
-    },
-    {
-      id: "5/1-007",
-      name: "Shihab",
-      role: "batsman",
-      battingStyle: "right_hand"
-    },
-    {
-      id: "5/1-008",
-      name: "Nobel",
-      role: "batsman",
-      battingStyle: "left_hand"
-    },
-    {
-      id: "5/1-009",
-      name: "Al siam",
-      role: "all_rounder",
-      battingStyle: "right_hand",
-      bowlingStyle: "right_medium"
-    },
-    {
-      id: "5/1-010",
-      name: "Niloy ahammed",
-      role: "batsman",
-      battingStyle: "left_hand"
-    },
-    {
-      id: "5/1-011",
-      name: "Tareq",
-      role: "batsman",
-      battingStyle: "right_hand"
-    },
-    {
-      id: "5/1-012",
-      name: "Nasim",
-      role: "bowler",
-      battingStyle: "right_hand",
-      bowlingStyle: "left_fast"
-    },
-    {
-      id: "5/1-013",
-      name: "Tanjit",
-      role: "all_rounder",
-      battingStyle: "left_hand",
-      bowlingStyle: "left_orthodox"
-    }
-  ],
+  {
+    id: "5/2-001",
+    name: "Rokon (C)",
+    role: "wicket_keeper",
+    battingStyle: "right_hand"
+  },
+  {
+    id: "5/2-002",
+    name: "Jubayer (VC)",
+    role: "bowler",
+    battingStyle: "right_hand"
+  },
+  {
+    id: "5/2-003",
+    name: "Nur Tawhid",
+    role: "batsman",
+    battingStyle: "right_hand"
+  },
+  {
+    id: "5/2-004",
+    name: "Shimir",
+    role: "batsman",
+    battingStyle: "right_hand"
+  },
+  {
+    id: "5/2-005",
+    name: "Sobuj",
+    role: "batsman",
+    battingStyle: "right_hand"
+  },
+  {
+    id: "5/2-006",
+    name: "Sajid",
+    role: "batsman",
+    battingStyle: "right_hand"
+  },
+  {
+    id: "5/2-007",
+    name: "Shihab",
+    role: "batsman",
+    battingStyle: "right_hand"
+  },
+  {
+    id: "5/2-008",
+    name: "Nobel",
+    role: "batsman",
+    battingStyle: "right_hand"
+  },
+  {
+    id: "5/2-009",
+    name: "Al Siam",
+    role: "all_rounder",
+    battingStyle: "right_hand"
+  },
+  {
+    id: "5/2-010",
+    name: "Niloy Ahammed",
+    role: "batsman",
+    battingStyle: "right_hand"
+  },
+  {
+    id: "5/2-011",
+    name: "Tareq",
+    role: "batsman",
+    battingStyle: "right_hand"
+  },
+  {
+    id: "5/2-012",
+    name: "Nasim",
+    role: "bowler",
+    battingStyle: "right_hand"
+  },
+  {
+    id: "5/2-013",
+    name: "Tanjit",
+    role: "all_rounder",
+    battingStyle: "right_hand"
+  },
+  {
+    id: "5/2-014",
+    name: "Sagor Islam",
+    role: "batsman",
+    battingStyle: "right_hand"
+  }
+],
 
   // 3/1
   [
