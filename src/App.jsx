@@ -9,6 +9,7 @@ import RulesPage from './pages/RulesPage'
 import NewsPage from './pages/NewsPage'
 import NewsDetailPage from './pages/NewsDetailPage'
 import LiveScorePage from './pages/LiveScore'
+import SingleTeam from './components/SingleTeam'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/teams" element={<TeamsPage />} />
+          <Route path="/team/:teamId" element={<SingleTeam />} />
           <Route path="/schedule" element={<SchedulePage />} />
           <Route path="/standings" element={<StandingsPage />} />
           <Route path="/rules" element={<RulesPage />} />
